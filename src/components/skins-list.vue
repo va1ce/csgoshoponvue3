@@ -1,7 +1,7 @@
 <template>
     <div class="skins-list">
         <skinsListItem
-            v-for="item in items"
+            v-for="item in ITEMS"
             :key="item.id"
             :item_data="item"
             @sendArticle="showChild"
@@ -19,11 +19,19 @@ export default {
     components: {
         skinsListItem,
     },
-    
+    computed: {
+        ...mapGetters(["ITEMS"])
+    },
     methods: {
         showChild(data) {
             console.log(data)
         },
+    },
+    methods: {
+        ...mapActions(["GET_ITEMS_FROM_API"])
+    },
+    mounted() {
+        this.GET_ITEMS_FROM_API();
     }
 }
 </script>

@@ -1,0 +1,94 @@
+{
+    "items": [
+        {
+            "id": "ccd8d83d-6bd7-4e56-af44-04289240e5d2",
+            "name": "Stockholm 2021 Champions Autograph Capsule",
+            "float": "",
+            "price": "24.78 ₽",
+            "link": "#",
+            "image": "https://robohash.org/quieaassumenda.png?size=50x50&set=set1",
+            "hold": "2 дня"
+        },
+        {
+            "id": "ceb2a90d-5a8d-4cd0-a49b-d1a88dc5307c",
+            "name": "AWP | Mortis (Field-Tested)",
+            "float": 0.3157,
+            "price": "90.21 ₽",
+            "link": "#",
+            "image": "https://robohash.org/reprehenderitquisnesciunt.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "59b4f0e8-cdb7-4971-a546-2d2c7ed2abec",
+            "name": "USP | Cortex (Field-Tested)",
+            "float": 0.3699,
+            "price": "120.93 ₽",
+            "link": "#",
+            "image": "https://robohash.org/teneturenimet.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "7ad83595-3451-4283-9964-5be9748ad7b0",
+            "name": "Operation Broken Fang Case",
+            "float": "",
+            "price": "101.97 ₽",
+            "link": "#",
+            "image": "https://robohash.org/rerumvelitexpedita.png?size=50x50&set=set1",
+            "hold": "5 дней"
+        },
+        {
+            "id": "92232208-6c20-4fda-bc85-9437fb520fed",
+            "name": "AWP | Atheris (Field-Tested)",
+            "float": 0.3438,
+            "price": "20.93 ₽",
+            "link": "#",
+            "image": "https://robohash.org/quoserroret.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "95f1a752-97cc-47c9-8aa0-b506c7c0e7fd",
+            "name": "SSG 08 | Fever Dream (Field-Tested)",
+            "float": 0.2450,
+            "price": "32.68 ₽",
+            "link": "#",
+            "image": "https://robohash.org/nequerepellatvoluptatum.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "32023b59-a473-45e7-bb4d-388960fcaa3e",
+            "name": "Desert Eagle | Mecha Industries (Field-Tested)",
+            "float": 0.1931,
+            "price": "230.10 ₽",
+            "link": "#",
+            "image": "https://robohash.org/nemoullamtenetur.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "67ea693e-c5c3-45f0-a53c-fa9aeb5e4e18",
+            "name": "AK-47 | Slate",
+            "float": 0.1761,
+            "price": "156.88 ₽",
+            "link": "#",
+            "image": "https://robohash.org/voluptatibuscupiditateet.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        },
+        {
+            "id": "983db54f-6ed5-4d27-aab1-2b7079e9af0d",
+            "name": "Dreams & Nightmares Case",
+            "float": "",
+            "price": "44.48 ₽",
+            "link": "#",
+            "image": "https://robohash.org/velitsedvoluptatum.png?size=50x50&set=set1",
+            "hold": ""
+        },
+        {
+            "id": "c2ff5f13-e5bd-4b57-a430-0a8f496ac7ff",
+            "name": "Desert Eagle | Light Rail",
+            "float": 0.2305,
+            "price": "40.45 ₽",
+            "link": "#",
+            "image": "https://robohash.org/cumquealiquidquo.png?size=50x50&set=set1",
+            "hold": "13 Часов"
+        }
+    ]
+}

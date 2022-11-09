@@ -1,0 +1,30 @@
+.form__content {
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--main-color);
+    margin-bottom: 10px;
+}
+.content__fields {
+    display: grid;
+    grid-template-columns: auto 10px auto;
+}
+.field__item {
+    margin-right: 5px;
+}
+.field__price {
+    background: var(--white-color);
+    border: none;
+    height: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    padding-left: 23px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.fa-rub {
+    position:absolute;
+    font-size: 13px;
+    opacity: 0.5;
+    top: 40px;
+    margin-left: 5px;
+}

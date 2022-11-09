@@ -1,0 +1,16 @@
+.nav {
+    padding-top: 35px;
+    padding-bottom: 33px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__button {
+        display: none;
+        border: none;
+        background-color: transparent;  
+        width: 48px;
+        height: 48px;
+    }
+}

@@ -4,7 +4,7 @@
             v-for="item in ITEMS"
             :key="item.id"
             :item_data="item"
-            @sendArticle="showChild"
+            @addToCart = "addToCart"
          />
        
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 import skinsListItem from './skins-list__item.vue';
-import { mapActions, mapGetters, createStore } from 'vuex';
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
     name: 'skins-list',
@@ -23,12 +23,13 @@ export default {
         ...mapGetters(["ITEMS"])
     },
     methods: {
-        showChild(data) {
-            console.log(data)
+        ...mapActions([
+            "GET_ITEMS_FROM_API",
+            "ADD_TO_CART"
+        ]),
+        addToCart(data) {
+            this.ADD_TO_CART(data)
         },
-    },
-    methods: {
-        ...mapActions(["GET_ITEMS_FROM_API"])
     },
     mounted() {
         this.GET_ITEMS_FROM_API();

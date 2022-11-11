@@ -16,7 +16,7 @@
         <div class="item__bottom">
             <div class="price">{{ item_data.price }}</div>
         </div>
-        <button class="item__to-cart" @click="sendDataToParent">
+        <button class="item__to-cart" @click="addToCart">
             <span><i class="fa fa-cart-plus"></i>В корзину</span>
         </button>
     </div>
@@ -33,10 +33,10 @@ export default {
                 return {}
             }
         }
-    },
+    },  
     methods: {
-        sendDataToParent() {
-            this.$emit('sendArticle', this.item_data.name)
+        addToCart() {
+            this.$emit('addToCart', this.item_data);
         }
     },
 }

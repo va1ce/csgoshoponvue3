@@ -13,20 +13,18 @@
             <select class="controls__sort">
                 <option value="Выбор">Популярность</option>
             </select>
-            <div class="market-cart">
-                <span class="market-cart__sum">
-                    <span class="market-cart__value">0.00</span>
-                    <i class="fa fa-ruble"></i>
-                </span>
-                <i class="fa fa-shopping-cart"></i>
-            </div>
+            <marketCart/>
         </div>
     </div>
 </template>
 
 <script>
+import marketCart from './market-cart.vue';
 export default {
     name: 'controls',
+    components:{
+        marketCart
+    }
 }
 </script>
 
@@ -35,6 +33,7 @@ export default {
     display: grid;
     grid-template-columns: 47% 53%;
     padding-bottom: 14px;
+    padding-top: 14px;
     &__left {
         display: grid;
         grid-template-columns: 58px 110px auto;
@@ -77,7 +76,7 @@ export default {
         padding-top: 7px;
         border: none;
         color: var(--main-color);
-        background-color: var(--second-color);
+        // background-color: var(--second-color);
         &:hover {
             opacity: 1;
         }

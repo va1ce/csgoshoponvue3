@@ -1,11 +1,10 @@
 <template>
     <div class="container">
         <div class="skins-market">
-        <Sidebar/>
-        <skinsCollection/>
+            <Sidebar />
+            <skinsCollection />
+        </div>
     </div>
-    </div>
-    
 </template>
 
 <script>
@@ -13,12 +12,12 @@ import Sidebar from './sidebar.vue';
 import skinsCollection from './skins-collection.vue';
 
 export default {
-    name : 'skins-market',
+    name: 'skins-market',
     components: {
         skinsCollection,
         Sidebar,
     },
-    props : {},
+    props: {},
     data() {
         return {
         }

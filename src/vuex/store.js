@@ -20,7 +20,11 @@ export default createStore({
         },
         SET_CART: (state, item) => {
             state.cart.push(item)
-        }
+        },
+        REMOVE_FROM_CART: (state, index) => {
+            state.cart.splice(index, 1)
+        },
+        
     },
     actions: {
         GET_ITEMS_FROM_API({ commit }) {
@@ -38,6 +42,9 @@ export default createStore({
         },
         ADD_TO_CART({commit}, item) {
             commit('SET_CART', item);
+        },
+        DELETE_FROM_CART({commit}, index) {
+            commit('REMOVE_FROM_CART', index)
         }
     },
     modules: {

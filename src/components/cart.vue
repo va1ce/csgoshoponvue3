@@ -2,38 +2,31 @@
     <div class="cart">
         <div class="cart-grid">
             <div class="cart-items-scrollable" v-if="CART.length">
-                <cartItem v-for="cart in CART" :key="cart.id" :cart_item_data="cart" />
+                <cartItem 
+                v-for="(cart, index) in CART" 
+                :key="cart.id" 
+                :cart_item_data="cart" 
+                @deleteFromCart="deleteFromCart(index)"
+                />
             </div>
             <div class="cart-empty" v-else >
                 <div class="cart-text">ВАША КОРЗИНА ПУСТА</div>
             </div>
-            <div class="cart-info">
-                <div class="cart-info-summary">
-                    <div class="cart-info-summary-list">
-                        <div class="cart-info-summary-item">
-                            <div class="cart-info-summary-item__title">Предметы</div>
-                            <div class="cart-info-summary-item__value">1</div>
-                        </div>
-                        <div class="cart-info-summary-item summary-total">
-                            <div class="cart-info-summary-item__title">Всего:</div>
-                            <div class="cart-info-summary-item__value">117.52</div>
-                        </div>
-                    </div>
-                </div>
-                <button class="cart-info__buy-btn">Купить</button>
-                <button class="cart-info__clear-btn">Очистить корзину</button>
-            </div>
+            <cartInfo
+            />
         </div>
     </div>
 </template>
 
 <script>
 import cartItem from './cart-item.vue';
-import { mapGetters } from 'vuex';
+import cartInfo from './cart-info.vue';
+import { mapGetters, mapActions } from 'vuex';
 export default {
     name: 'cart',
     components: {
-        cartItem,
+    cartItem,
+    cartInfo,
     },
     props: {
         cart_data: {
@@ -45,6 +38,12 @@ export default {
     },
     computed: {
         ...mapGetters(['CART'])
+    },
+    methods: {
+        ...mapActions(['DELETE_FROM_CART']),
+        deleteFromCart(index) {
+            this.DELETE_FROM_CART(index)
+        }
     }
 }
 </script>
@@ -56,6 +55,23 @@ export default {
     background-color: #fff;
     padding: 15px;
     box-sizing: border-box;
+}
+.cart-items-scrollable {
+    height: 160px; /* высота нашего блока */
+    width: 570px;
+    overflow-y: scroll;
+}
+.cart-items-scrollable::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 3px;
+}
+.cart-items-scrollable::-webkit-scrollbar{
+    width: 4px;
+}
+.cart-items-scrollable::-webkit-scrollbar-track{
+    background: rgba(85, 85, 85, .3);
+    border-radius: 3px;
 }
 .cart-empty {
     align-self: center;

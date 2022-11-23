@@ -48,6 +48,7 @@ export default {
         }
         &--active {
             font-weight: 1000;
+            color: var(--white-color);
         }
     }
 }

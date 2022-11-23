@@ -1,7 +1,7 @@
 <template>
     <div class="skins-list__item item">
         <div class="item__info">
-            <div class="item__skin-info">
+            <div v-if="item_data.hold" class="item__skin-info">
                 <i class="fa fa-lock"></i>
                 {{ item_data.hold }}
             </div>

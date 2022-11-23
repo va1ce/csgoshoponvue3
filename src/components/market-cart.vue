@@ -5,17 +5,15 @@
             <i class="fa fa-ruble"></i>
         </span>
         <i class="fa fa-shopping-cart"></i>
-        <marketCart__item/>
     </div>
 </template>
 
 <script>
-import marketCart__item from './market-cart__item.vue';
 import { mapGetters } from 'vuex';
 export default {
     name: 'market-cart',
     components : {
-        marketCart__item
+        
     },
     props: {
         cart_data: {

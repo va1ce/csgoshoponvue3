@@ -1,8 +1,13 @@
 <template>
     <div class="skins-collection">
         <cart/>
-        <controls/>
-        <skinsList/>
+        <controls
+        @selectedSort="selectedSort"
+        />
+        <skinsList
+        :selected="selectedOption"
+        :selectedCheckboxGroup="selectedCheckboxGroup"
+        />
         <pagination/>
     </div>
 </template>
@@ -20,7 +25,27 @@ export default {
         controls,
         skinsList,
         pagination,
-    }
+    },
+    data() {
+        return {
+            selectedOption: {name: 'Популярность', icons:"", value: 1}
+        }
+    },
+    props: {
+        selectedCheckboxGroup: {
+            type: Array,
+            default() {
+                return []
+            }
+        }
+    },
+    methods: {
+        selectedSort(obj) {
+            this.selectedOption.name = obj.name
+            this.selectedOption.icons = obj.icons
+            this.selectedOption.value = obj.value
+        },
+    },
 }
 </script>
 

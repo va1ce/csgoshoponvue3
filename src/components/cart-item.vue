@@ -44,6 +44,9 @@ export default {
         background-color: var(--blue-color);
     }
 }
+.cart-item__name {
+    width: 212px;
+}
 .cart-item__float {
     font-size: 12px;
     font-weight: 300;

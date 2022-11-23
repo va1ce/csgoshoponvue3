@@ -12,7 +12,7 @@
             <div class="cart-empty" v-else >
                 <div class="cart-text">ВАША КОРЗИНА ПУСТА</div>
             </div>
-            <cartInfo
+            <cartInfo @deleteAllCart="deleteAllCart"
             />
         </div>
     </div>
@@ -40,9 +40,15 @@ export default {
         ...mapGetters(['CART'])
     },
     methods: {
-        ...mapActions(['DELETE_FROM_CART']),
+        ...mapActions([
+            'DELETE_FROM_CART',
+            'DELETE_ALL_CART'
+        ]),
         deleteFromCart(index) {
             this.DELETE_FROM_CART(index)
+        },
+        deleteAllCart() {
+            this.DELETE_ALL_CART()
         }
     }
 }

@@ -4,26 +4,50 @@
             <button class="controls__reload">
                 <i class="fa fa-refresh"></i>
             </button>
-            <div class="controls__search">
-                <input type="text" placeholder="Поиск по скинам" class="controls__input">
-                <i class="fa fa-search"></i>
-            </div>
+            <controls__search/>
         </div>
         <div class="controls__right">
-            <select class="controls__sort">
-                <option value="Выбор">Популярность</option>
-            </select>
-            <marketCart/>
+            <selectVue 
+            :options="options"
+            @select="optionsSelect"
+            :selected="selected"
+            />
         </div>
     </div>
 </template>
 
 <script>
 import marketCart from './market-cart.vue';
+import selectVue from './select.vue';
+import controls__search from './controls__search.vue';
 export default {
     name: 'controls',
     components:{
-        marketCart
+        marketCart,
+        selectVue,
+        controls__search,
+    },
+    data() {
+        return {
+            options: [
+                {name: 'Популярность', icons:"", value: 1},
+                {name: 'Цена', icons:"fa-solid fa-arrow-up-short-wide", value: 2},
+                {name: 'Цена', icons:"fa-solid fa-arrow-down-short-wide", value: 3},
+                {name: 'Самые новые', value: 4},
+                {name: 'Самые старые', value: 5},
+                {name: 'Float', icons:"fa-solid fa-arrow-up-short-wide", value: 6},
+                {name: 'Float', icons:"fa-solid fa-arrow-down-short-wide", value: 7},
+            ],
+            selected: {name: 'Популярность', icons:"", value: 1}
+        }
+    },
+    methods: {
+        optionsSelect(option) {
+            this.selected.name = option.name
+            this.selected.icons = option.icons
+            this.selected.value = option.value
+            this.$emit('selectedSort',this.selected)
+        }
     }
 }
 </script>
@@ -36,7 +60,8 @@ export default {
     padding-top: 14px;
     &__left {
         display: grid;
-        grid-template-columns: 58px 110px auto;
+        grid-template-columns: 58px 110px;
+        align-items: center;
     }
     &__right {
         display: flex;
@@ -53,19 +78,6 @@ export default {
         &:hover {
             opacity: 1;
         }
-    }
-    &__search {
-        position: relative;
-    }
-    &__input {
-        background: var(--white-color);
-        border: none;
-        height: 38px;
-        box-sizing: border-box;
-        outline: 0;
-        padding-left: 35px;
-        padding-right: 30px;
-        border-radius: 5px;
     }
     &__sort {
         display: inline-block;

@@ -7,7 +7,8 @@
             "price": "24.78 ₽",
             "link": "#",
             "image": "1.png",
-            "hold": "2 дня"
+            "hold": "2 дня",
+            "type": "container"
         },
         {
             "id": "ceb2a90d-5a8d-4cd0-a49b-d1a88dc5307c",
@@ -16,7 +17,8 @@
             "price": "90.21 ₽",
             "link": "#",
             "image": "2.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "sniper Rifle"
         },
         {
             "id": "59b4f0e8-cdb7-4971-a546-2d2c7ed2abec",
@@ -25,7 +27,8 @@
             "price": "120.93 ₽",
             "link": "#",
             "image": "3.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "pistol"
         },
         {
             "id": "7ad83595-3451-4283-9964-5be9748ad7b0",
@@ -34,16 +37,18 @@
             "price": "101.97 ₽",
             "link": "#",
             "image": "4.png",
-            "hold": "5 дней"
+            "hold": "5 дней",
+            "type": "case"
         },
         {
             "id": "92232208-6c20-4fda-bc85-9437fb520fed",
             "name": "AWP | Atheris (Field-Tested)",
             "float": 0.3438,
-            "price": "20.93 ₽",
+            "price": "190.93 ₽",
             "link": "#",
             "image": "5.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "sniper Rifle"
         },
         {
             "id": "95f1a752-97cc-47c9-8aa0-b506c7c0e7fd",
@@ -52,7 +57,8 @@
             "price": "32.68 ₽",
             "link": "#",
             "image": "6.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "sniper Rifle"
         },
         {
             "id": "32023b59-a473-45e7-bb4d-388960fcaa3e",
@@ -61,7 +67,8 @@
             "price": "230.10 ₽",
             "link": "#",
             "image": "7.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "pistol"
         },
         {
             "id": "67ea693e-c5c3-45f0-a53c-fa9aeb5e4e18",
@@ -70,7 +77,8 @@
             "price": "156.88 ₽",
             "link": "#",
             "image": "8.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "Rifle"
         },
         {
             "id": "983db54f-6ed5-4d27-aab1-2b7079e9af0d",
@@ -79,7 +87,8 @@
             "price": "44.48 ₽",
             "link": "#",
             "image": "9.png",
-            "hold": ""
+            "hold": "",
+            "type": "case"
         },
         {
             "id": "c2ff5f13-e5bd-4b57-a430-0a8f496ac7ff",
@@ -88,7 +97,8 @@
             "price": "40.45 ₽",
             "link": "#",
             "image": "10.png",
-            "hold": "13 Часов"
+            "hold": "13 Часов",
+            "type": "pistol"
         }
     ]
 }

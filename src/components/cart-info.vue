@@ -8,12 +8,12 @@
                 </div>
                 <div class="cart-info-summary-item summary-total">
                     <div class="cart-info-summary-item__title">Всего:</div>
-                    <div class="cart-info-summary-item__value">{{ cartTotalCost }}</div>
+                    <div class="cart-info-summary-item__value">{{ cartTotalCost }} ₽</div>
                 </div>
             </div>
         </div>
         <button class="cart-info__buy-btn">Купить</button>
-        <button class="cart-info__clear-btn">Очистить корзину</button>
+        <button class="cart-info__clear-btn" @click="deleteAllCart">Очистить корзину</button>
     </div>
 </template>
 
@@ -35,21 +35,20 @@ export default {
             let result = []
             if (this.CART.length) {
                 for (let item of this.CART) {
-                    console.log(item.price)
-                    result.push(item.price.replace(/[^0-9,.]/g, ' '));
+                    result.push(item.price.replace(/[^0-9,.]/g, ' ').trim());
                 }
-                
-                result = result.reduce(function (sum, el) {
-                    return sum + el
-                });
-                return result;
-            }
+                let k = result.reduce((acc, number) => parseFloat(acc) + parseFloat(number));
+                k = parseFloat(k)
+                return k.toFixed(2);
+            } 
             else return 0;
 
         },
     },
-    mounted() {
-
+    methods: {
+        deleteAllCart() {
+            this.$emit('deleteAllCart')
+        },
     }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
-    <div class="form__item" :class="{ 'form__item--opened': areSidebarVisible || areDefaultSidebarVisible}">
-        <div class="form__title" @click="areSidebarVisible = !areSidebarVisible">{{ sliderOptions.name }}</div>
+    <div class="form__item" :class="{ 'form__item--opened': areDefaultSidebarVisible}">
+        <div class="form__title" @click="areDefaultSidebarVisible = !areDefaultSidebarVisible">{{ sliderOptions.name }}</div>
         <transition name="fade">
-            <div class="form__content form-content" v-if="areSidebarVisible || areDefaultSidebarVisible">
+            <div class="form__content form-content" v-if="areDefaultSidebarVisible">
                 <div v-if="sliderOptions.name == 'Цена'" class="content__fields fields">
                     <div class="field__item">
                         <i class="fa fa-rub"></i>
@@ -34,7 +34,6 @@ export default {
     data() {
         return {
             sliderValue: { gte: "", lte: "" },
-            areSidebarVisible:false
         }
     },
     props: {

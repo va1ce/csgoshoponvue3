@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'select',
+    name: 'selectVue',
     props: {
         options: {
             type: Array,

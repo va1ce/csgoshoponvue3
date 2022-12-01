@@ -1,23 +1,13 @@
 <template>
-  <navigation/>
-  <Headersvue/>
-  <skinsMarket/>
-  <Footer></Footer>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import navigation from './components/navigation.vue';
-import Headersvue from './components/Headervue.vue';
-import skinsMarket from './components/skins-market.vue';
-import Footer from './components/Footer.vue';
-
 export default {
   name: 'app',
   components: {
-    navigation,
-    Headersvue,
-    skinsMarket,
-    Footer,
   }
 }
 </script>

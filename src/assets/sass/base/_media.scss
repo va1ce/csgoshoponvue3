@@ -4,7 +4,7 @@
     }
 }
 @media (max-width:850px){
-    .nav__button {
+    .bm-burger-button {
         display: block; 
         z-index: 60;
     }
@@ -48,6 +48,9 @@
     .header__row {
         height: 370px;
     }
+    .bm-burger-button {
+        top:33px
+    }
 }
 @media (max-width:1140px) {
     .skins-list {
@@ -59,7 +62,7 @@
         grid-template-columns: 33.3% 33.3% 33.3%;
     }
 }
-@media (max-width:900px) {
+@media (max-width:903px) {
     .skins-market {
         display: block;
     }
@@ -83,7 +86,7 @@
     .skins-list {
         grid-template-columns: 50% 50%;
     }
-    .footer__ist {
+    .footer__list {
         grid-template-columns: 50% 50%;
     }
     .controls {

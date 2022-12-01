@@ -4,101 +4,440 @@
             "id": "ccd8d83d-6bd7-4e56-af44-04289240e5d2",
             "name": "Stockholm 2021 Champions Autograph Capsule",
             "float": "",
-            "price": "24.78 ₽",
+            "price": "24.78",
+            "wear":"",
             "link": "#",
             "image": "1.png",
             "hold": "2 дня",
-            "type": "container"
+            "properties": ["2 days","Container"]
         },
         {
             "id": "ceb2a90d-5a8d-4cd0-a49b-d1a88dc5307c",
-            "name": "AWP | Mortis (Field-Tested)",
+            "name": "AWP | Mortis",
             "float": 0.3157,
-            "price": "90.21 ₽",
+            "price": "90.21",
+            "wear":"FT",
             "link": "#",
             "image": "2.png",
-            "hold": "13 Часов",
-            "type": "sniper Rifle"
+            "hold": "1 День",
+            "properties": ["1 day","Sniper Rifle","Classified","Field-Tested"]
         },
         {
             "id": "59b4f0e8-cdb7-4971-a546-2d2c7ed2abec",
-            "name": "USP | Cortex (Field-Tested)",
+            "name": "StatTrak™ USP | Cortex",
             "float": 0.3699,
-            "price": "120.93 ₽",
+            "price": "120.93",
+            "wear":"FT",
             "link": "#",
             "image": "3.png",
-            "hold": "13 Часов",
-            "type": "pistol"
+            "hold": "1 День",
+            "properties": ["1 day","Pistol","Classified","Field-Tested"]
         },
         {
             "id": "7ad83595-3451-4283-9964-5be9748ad7b0",
             "name": "Operation Broken Fang Case",
             "float": "",
-            "price": "101.97 ₽",
+            "price": "101.97",
+            "wear":"",
             "link": "#",
             "image": "4.png",
             "hold": "5 дней",
-            "type": "case"
+            "properties": ["5 days","Container"]
         },
         {
             "id": "92232208-6c20-4fda-bc85-9437fb520fed",
-            "name": "AWP | Atheris (Field-Tested)",
+            "name": "AWP | Atheris",
             "float": 0.3438,
-            "price": "190.93 ₽",
+            "price": "190.93",
+            "wear":"FT",
             "link": "#",
             "image": "5.png",
-            "hold": "13 Часов",
-            "type": "sniper Rifle"
+            "hold": "1 день",
+            "properties": ["1 day","Sniper Rifle","Restricted","Field-Tested"]
         },
         {
             "id": "95f1a752-97cc-47c9-8aa0-b506c7c0e7fd",
-            "name": "SSG 08 | Fever Dream (Field-Tested)",
+            "name": "SSG 08 | Fever Dream",
             "float": 0.2450,
-            "price": "32.68 ₽",
+            "price": "32.68",
+            "wear":"FT",
             "link": "#",
             "image": "6.png",
-            "hold": "13 Часов",
-            "type": "sniper Rifle"
+            "hold": "1 день",
+            "properties": ["1 day","Sniper Rifle","Restricted","Field-Tested"]
         },
         {
             "id": "32023b59-a473-45e7-bb4d-388960fcaa3e",
-            "name": "Desert Eagle | Mecha Industries (Field-Tested)",
+            "name": "Desert Eagle | Mecha Industries",
             "float": 0.1931,
-            "price": "230.10 ₽",
+            "price": "230.10",
+            "wear":"FT",
             "link": "#",
             "image": "7.png",
-            "hold": "13 Часов",
-            "type": "pistol"
+            "hold": "1 день",
+            "properties": ["1 day","Pistol","Classified","Field-Tested"]
         },
         {
             "id": "67ea693e-c5c3-45f0-a53c-fa9aeb5e4e18",
-            "name": "AK-47 | Slate (Field-Tested)",
+            "name": "AK-47 | Slate",
             "float": 0.1761,
-            "price": "156.88 ₽",
+            "price": "156.88",
+            "wear":"FT",
             "link": "#",
             "image": "8.png",
-            "hold": "13 Часов",
-            "type": "Rifle"
+            "hold": "1 день",
+            "properties": ["1 day","Rifle","Restricted","Field-Tested"]
         },
         {
             "id": "983db54f-6ed5-4d27-aab1-2b7079e9af0d",
             "name": "Dreams & Nightmares Case",
             "float": "",
-            "price": "44.48 ₽",
+            "price": "44.48",
+            "wear":"",
             "link": "#",
             "image": "9.png",
             "hold": "",
-            "type": "case"
+            "properties": ["Without hold","Container"]
         },
         {
             "id": "c2ff5f13-e5bd-4b57-a430-0a8f496ac7ff",
-            "name": "Desert Eagle | Light Rail (Field-Tested)",
+            "name": "Desert Eagle | Light Rail",
             "float": 0.2305,
-            "price": "40.45 ₽",
+            "price": "40.45",
+            "wear":"FT",
             "link": "#",
             "image": "10.png",
             "hold": "13 Часов",
-            "type": "pistol"
+            "properties": ["1 day","Pistol","Restricted","Field-Tested"]
+        },
+        {
+            "id": "2ee91a77-6d9b-4e95-add2-bb61a926dd62",
+            "name": "★ Shadow Daggers | Bright Water",
+            "float": 0.08342,
+            "price": "8052.75",
+            "wear": "MW",
+            "link": "#",
+            "image": "12.png",
+            "hold": "5 дней",
+            "properties": [
+                "Knife",
+                "5 days",
+                "Minimal Wear"
+            ]
+        },
+        {
+            "id": "132d79b6-f2d2-4999-8ed9-cb990387bd86",
+            "name": "StatTrak™ Desert Eagle | Code Red",
+            "float": 0.1038,
+            "price": "7952.84",
+            "wear": "MW",
+            "link": "#",
+            "image": "13.png",
+            "hold": "5 дней",
+            "properties": [
+                "StatTrak™",
+                "Pistol",
+                "5 days",
+                "Minimal Wear"
+            ]
+        },
+        {
+            "id": "3291f674-e7d9-4fcf-9a33-c2f11ec2d156",
+            "name": "AWP | Wildfire",
+            "float": 0.1485,
+            "price": "7952.84",
+            "wear": "MW",
+            "link": "#",
+            "image": "14.png",
+            "hold": "6 дней",
+            "properties": [
+                "Sniper Rifle",
+                "6 days",
+                "Minimal Wear"
+            ]
+        },
+        {
+            "id": "5972353f-13ea-49d1-b270-b02361878f00",
+            "name": "StatTrak™ USP-S | Blueprint",
+            "float": 0.03729,
+            "price": "7931.17",
+            "wear": "FN",
+            "link": "#",
+            "image": "15.png",
+            "hold": "6 дней",
+            "properties": [
+                "StatTrak™",
+                "Pistol",
+                "6 days",
+                "Factory New"
+            ]
+        },
+        {
+            "id": "64bc3087-08fc-4e79-844b-4bbe054de13b",
+            "name": "★ Huntsman Knife | Urban Masked",
+            "float": 0.3566,
+            "price": "7899.88",
+            "wear": "FT",
+            "link": "#",
+            "image": "16.png",
+            "hold": "1 день",
+            "properties": [
+                "Knife",
+                "1 day",
+                "Field-Tested"
+            ]
+        },
+        {
+            "id": "d220fef4-ccc3-4b5c-a8ae-954aa54071d4",
+            "name": "★ Navaja Knife | Ultraviolet",
+            "float": 0.09224,
+            "price": "7790.34",
+            "wear": "MW",
+            "link": "#",
+            "image": "17.png",
+            "hold": "6 дней",
+            "properties": [
+                "Knife",
+                "6 days",
+                "Minimal Wear"
+            ]
+        },
+        {
+            "id": "1c6043e7-1f64-40a0-88cb-dfd4288491c6",
+            "name": "StatTrak™ Glock-18 | Snack Attack",
+            "float": 0.6657,
+            "price": "416.48",
+            "wear": "BS",
+            "link": "#",
+            "image": "18.png",
+            "hold": "7 дней",
+            "properties": [
+                "StatTrak™",
+                "Pistol",
+                "7 days",
+                "Battle-Scarred"
+            ]
+        },
+        {
+            "id": "362294cd-e6c0-4f61-9857-77ea1f39276c",
+            "name": "StatTrak™ SSG 08 | Turbo Peek",
+            "float": 0.1744,
+            "price": "444.16",
+            "wear": "FT",
+            "link": "#",
+            "image": "150809_b.png",
+            "hold": "1 день",
+            "properties": [
+                "StatTrak™",
+                "Rifle",
+                "Sniper Rifle",
+                "1 day",
+                "Field-Tested"
+            ]
+        },
+        {
+            "id": "f708aa2d-19bd-4b56-8c4a-99431a4d3e3a",
+            "name": "Souvenir Nova | Green Apple",
+            "float": 0.04204,
+            "price": "414.07",
+            "wear": "FN",
+            "link": "#",
+            "image": "11522_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "Souvenir",
+                "Shotgun",
+                "8 days",
+                "Factory New"
+            ]
+        },
+        {
+            "id": "dec4ab54-248f-4996-8251-1adc9efdb4df",
+            "name": "P90 | Nostalgia",
+            "float": 0.3952,
+            "price": "414.07",
+            "wear": "WW",
+            "link": "#",
+            "image": "144486_b.png",
+            "hold": "5 дней",
+            "properties": [
+                "SMG",
+                "5 days",
+                "Well-Worn"
+            ]
+        },
+        {
+            "id": "77c8ce0c-6e48-4a64-bc78-23f0d22d677e",
+            "name": "Tec-9 | Decimator",
+            "float": 0.6035,
+            "price": "414.07",
+            "wear": "BS",
+            "link": "#",
+            "image": "144829_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "Pistol",
+                "8 days",
+                "Battle-Scarred"
+            ]
+        },
+        {
+            "id": "dbcf87ba-a509-4850-b29b-15690f3aca2a",
+            "name": "R8 Revolver | Skull Crusher",
+            "float": 0.4828,
+            "price": "123.98",
+            "wear": "BS",
+            "link": "#",
+            "image": "141390_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "Pistol",
+                "8 days",
+                "Battle-Scarred"
+            ]
+        },
+        {
+            "id": "2fe31a35-a5b4-4811-b874-cc91bc5fd9b0",
+            "name": "StatTrak™ SSG 08 | Fever Dream",
+            "float": 0.2988,
+            "price": "129.99",
+            "wear": "FT",
+            "link": "#",
+            "image": "145960_b.png",
+            "hold": "5 дней",
+            "properties": [
+                "StatTrak™",
+                "Rifle",
+                "Sniper Rifle",
+                "5 days",
+                "Field-Tested"
+            ]
+        },
+        {
+            "id": "07f61529-742c-4982-bf7d-065fab093b04",
+            "name": "Tec-9 | Cut Out",
+            "float": 0.09817,
+            "price": "123.98",
+            "wear": "MW",
+            "link": "#",
+            "image": "17261_b.png",
+            "hold": "4 дня",
+            "properties": [
+                "Pistol",
+                "4 days",
+                "Minimal Wear"
+            ]
+        },
+        {
+            "id": "02b6ed7a-01e8-4aa0-b4ca-46e61de2b0d5",
+            "name": "StatTrak™ XM1014 | Teclu Burner",
+            "float": 0.4917,
+            "price": "123.98",
+            "wear": "BS",
+            "link": "#",
+            "image": "13859_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "StatTrak™",
+                "Shotgun",
+                "8 days",
+                "Battle-Scarred"
+            ]
+        },
+        {
+            "id": "32b0b3d5-351e-4e1f-a005-2e902d9578ec",
+            "name": "StatTrak™ Desert Eagle | Directive",
+            "float": 0.4382,
+            "price": "132.40",
+            "wear": "WW",
+            "link": "#",
+            "image": "15400_b.png",
+            "hold": "2 дня",
+            "properties": [
+                "StatTrak™",
+                "Pistol",
+                "2 days",
+                "Well-Worn"
+            ]
+        },
+        {
+            "id": "89d3fcfb-c8d3-4d3b-9d34-24a41c3da3ea",
+            "name": "AUG | Stymphalian",
+            "float": 0.4347,
+            "price": "132.40",
+            "wear": "WW",
+            "link": "#",
+            "image": "39177_b.png",
+            "hold": "3 дня",
+            "properties": [
+                "Rifle",
+                "3 days",
+                "Well-Worn"
+            ]
+        },
+        {
+            "id": "992c0649-02df-433d-8f6e-5feb79a5726b",
+            "name": "StatTrak™ MP9 | Capillary",
+            "float": 0.06792,
+            "price": "121.57",
+            "wear": "FN",
+            "link": "#",
+            "image": "58497_b.png",
+            "hold": "7 дней",
+            "properties": [
+                "StatTrak™",
+                "SMG",
+                "7 days",
+                "Factory New"
+            ]
+        },
+        {
+            "id": "35939cf3-319a-448c-b79c-53cc9e068914",
+            "name": "StatTrak™ P250 | Supernova",
+            "float": 0.3223,
+            "price": "121.57",
+            "wear": "FT",
+            "link": "#",
+            "image": "11039_b.png",
+            "hold": "5 дней",
+            "properties": [
+                "StatTrak™",
+                "Pistol",
+                "5 days",
+                "Field-Tested"
+            ]
+        },
+        {
+            "id": "71f033eb-eabe-4252-9b18-058581682f50",
+            "name": "MAG-7 | Praetorian",
+            "float": 0.1988,
+            "price": "121.57",
+            "wear": "FT",
+            "link": "#",
+            "image": "14023_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "Shotgun",
+                "8 days",
+                "Field-Tested"
+            ]
+        },
+        {
+            "id": "68513c62-d3ef-4df2-9340-d4d22dd72fb6",
+            "name": "StatTrak™ FAMAS | ZX Spectron",
+            "float": 0.6745,
+            "price": "121.57",
+            "wear": "BS",
+            "link": "#",
+            "image": "150698_b.png",
+            "hold": "8 дней",
+            "properties": [
+                "StatTrak™",
+                "Rifle",
+                "8 days",
+                "Battle-Scarred"
+            ]
         }
+        
     ]
 }

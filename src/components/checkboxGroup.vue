@@ -1,14 +1,14 @@
 <template >
-    <div class="form__item " :class="{ 'form__item--opened': areSidebarVisible || areDefaultSidebarVisible}">
-        <div class="form__title" @click="areSidebarVisible = !areSidebarVisible">{{ sidebarOptions.name }}</div>
+    <div class="form__item " :class="{ 'form__item--opened': areDefaultSidebarVisible }">
+        <div class="form__title" @click="areDefaultSidebarVisible = !areDefaultSidebarVisible">{{ sidebarOptions.name }}</div>
         <transition name="fade">
-            <div class="form__content form-content" v-if="areSidebarVisible || areDefaultSidebarVisible">
+            <div class="form__content form-content" v-if="areDefaultSidebarVisible ">
                 <div class="checkbox" 
                 v-for="option in sidebarOptions.checkboxes" >
                     <input 
                         type="checkbox" 
                         :id="option.id" 
-                        :value="option.name" 
+                        :value="option.type" 
                         v-model="checkedNames"
                         @input="selectOption(option)"
                         class="checkbox__input"/>
@@ -18,7 +18,6 @@
                         >{{ option.name }}
                     </label>
                 </div>
-                {{checkedNames}}
             </div>
         </transition>
     </div>
@@ -30,7 +29,6 @@ export default {
     data() {
         return {
             checkedNames: [],
-            areSidebarVisible:false
         }
     },
     props: {
@@ -51,7 +49,7 @@ export default {
     },
     methods: {
         selectOption(option) {
-            this.$emit('select', option)
+            this.$emit('select', option.type)
         },
     },
     watch: {

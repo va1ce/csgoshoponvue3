@@ -1,6 +1,6 @@
 <template>
     <div class="logo">
-        <a href="#" class="logo__item link">csgo-shop</a>
+        <router-link :to="'/'" class="logo__item link">csgo-shop</router-link>
     </div>
 </template>
 

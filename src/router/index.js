@@ -1,9 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import market from '../components/market'
+import saleSkinsLayout from '../components/sell-skins/sellSkinsLayout'
 
 const routes = [
   {
     path: "/",
-    component: app,
+    component: saleSkinsLayout,
+  },
+  {
+    path: "/market",
+    name:'market',
+    component: market,
   }
 ]
 

@@ -90,9 +90,14 @@ export default {
                     return item.name.toLowerCase().includes(this.SEARCH_VALUE.toLowerCase())
                 })
             }
+          //   много дублирования в этом методе,
+          //     кроме того надо вынести из этой огромной функции всё по мелким функциям
+          // и использовать их, чтобы не повторяться и упростить себе восприятие логики
             if (this.selected.value == 2) {
                 this.sortedItems.sort((a, b) => b.price - a.price);
             }
+            // значения 2,3,6 это магические цифры, ничего не понятно что происходит в этом участке кода, надо
+          // переписать код так, чтобы он ссылался на константы вместо просто цифр
             if (this.selected.value == 3) {
                 this.sortedItems.sort((a, b) => a.price - b.price);
             }
@@ -152,6 +157,7 @@ export default {
                 });
                 this.sortedItems.sort((a, b) => b.price.replace(/[^0-9,.]/g, ' ').trim() - a.price.replace(/[^0-9,.]/g, ' ').trim());
             }
+            // почти идентичное дублирование функции выше
             if (selected.value == 3) {
                 this.ITEMS.forEach(element => {
                     this.sortedItems.push(element)

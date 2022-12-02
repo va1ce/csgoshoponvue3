@@ -24,6 +24,7 @@ import inventoryItems from './inventory-items.vue';
 export default {
     data() {
         return {
+          // должно быть в store как и поиск, не вижу смысла делать локальный стейт для одного из элементов поиска
             sortValue:"desk"
         }
     },

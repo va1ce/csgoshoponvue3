@@ -1,5 +1,7 @@
 <template>
   <router-view></router-view>
+
+<!--  вместо дублирования части компонентов, надо выносить их на более высокий уровень, например app или layout-->
   <navigation></navigation>
   <Headersvue />
   <skinsMarket />

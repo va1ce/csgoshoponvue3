@@ -44,6 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
+//ты не используешь возможности sass, добавь хотя бы вложенность внутри своих файлов
 .footer {
     padding-top: 40px;
     height: 230px;

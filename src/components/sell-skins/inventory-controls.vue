@@ -1,5 +1,8 @@
 <template >
     <div class="inventory-controls">
+<!--      во вью принято писать через CamelCase,-->
+<!--      sortByPriceVue тоже надо с большой буквы начинать-->
+<!--      и суффикс Vue лишний для компонентов-->
         <controls__search @searchValue="searchSkins" class="inventory-controls__search"/>
         <sortByPriceVue @changeSort="changeSort" class="inventory-controls__priceorder"/>
     </div>

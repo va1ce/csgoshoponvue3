@@ -25,6 +25,7 @@
 
 <script>
 export default {
+  // здесь всё отлично сделал
     name: 'checkboxGroup',
     data() {
         return {

@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  // лучше просто Header
     name: 'Headersvue',
 }
 </script>

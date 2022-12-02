@@ -28,11 +28,16 @@ export default {
     props: {},
     data() {
         return {
+          // это надо перенести в стор, как и всю логику работы с данными
             selectedCheckboxGroup: [],
+
+            // неверно, по умолчанию корректно будет selectedPrice: null, объект с пустыми полями - лишняя логика обработки
             selectedPrice: {
                 gte: "",
                 lte: "",
             },
+
+            // неверно, по умолчанию корректно будет selectedPrice: null, объект с пустыми полями - лишняя логика обработки
             selectedFloat: {
                 gte: "",
                 lte: ""
@@ -57,6 +62,7 @@ export default {
 
 <style lang="scss">
 .skins-market {
+//rgb(18 19 20 / 59%) не надо так, для этого и существует hex формат, sass умеет rgba(#hex) формат
     box-shadow: 0 13px 49px 0 rgb(18 19 20 / 59%);
     display: grid;
     grid-template-columns: 210px auto;

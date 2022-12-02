@@ -10,6 +10,7 @@ import balance from './balance.vue';
 import avatar from './avatar.vue';
 
 export default {
+  // это не логин, а profile или account-menu
     name:'login',
     components: {
         avatar,

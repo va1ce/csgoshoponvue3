@@ -1,6 +1,8 @@
 <template >
     <div class="inventory-items">
         <inventoryItem v-for="item in filteredItems" :key="item.id" :item_data="item" />
+
+<!--        Empty компонент можно сразу вынести в отдельную фичу и переиспользовать-->
         <div v-if="!filteredItems.length" class="empty-list">
             <h3 class="empty-list__title">Ничего не найдено</h3>
         </div>
@@ -36,6 +38,10 @@ export default {
             "GET_ITEMS_IN_INVENTORY_FROM_API",
             "GET_SEACRH_VALUE_TO_VUEX"
         ]),
+      // не надо так, у тебя и так уже всё в store находится, зачем
+      // эта логика по фильтрации в компонентах, это тоже надо выносить в computed внутри store
+      // вообще при использовании vuex там будут и данные и методы
+      // а компоненты это лишь вызывают в нужных местах без собственной логики
         sortItemsBySearchValue(value) {
             this.filteredItems = [...this.ITEMS_IN_IVENTORY]
             if (value) {
@@ -44,6 +50,7 @@ export default {
                 })
             }
         },
+        // должно быть в vuex стейте
         sortItemsByPrice(value) {
             if (value == "desk") {
                 this.filteredItems.sort((a, b) => b.price - a.price);
@@ -100,6 +107,10 @@ export default {
     background: rgba(85, 85, 85, .3);
     border-radius: 3px;
 }
+
+// не, с этим плохо разобрался, сетку layout-grid могу подкинуть
+// самый удобный вариант использования
+//
 @media (max-width:1080px){
     .inventory-items {
         grid-template-columns: auto auto auto auto auto;

@@ -27,6 +27,7 @@ export default {
     data() {
         return {
             filterOptions: {
+              // этим данным место в db.json
                 priceOption: { name: 'Цена', value: 1, },
                 typeOption: { name: 'Тип', value: 2, checkboxes: [{name:'Нож', id:1,type:"Knife"},{name:'Пулемет', id:2,type:"Machinegun"},{name:'Пистолет', id:3,type:"Pistol"},{name:'Винтовка', id:4,type:"Rifle"},{name:'Дробовик', id:5,type:"Shotgun"},{name:'Снайперская винтовка', id:6,type:"Sniper Rifle"},{name:'Подарок', id:7,type:"Gift"},{name:'Именной ярлык', id:8,type:"Tag"},{name:'Патч', id:9,type:"Patch"},{name:'Наклейка', id:10,type:"Sticker"},{name:'Перчатки', id:11,type:"Gloves"},{name:'Контейнер', id:12,type:"Container"},{name:'Ключ', id:13,type:"Key"}] },
                 wearOption: { name: 'Износ', value: 3, checkboxes: [{name:'Прямо с завода', id:14, type:"Factory New"},{name:'Немного поношенное', id:15, type:"Minimal Wear"},{name:'После полевых испытаний', id:16, type:"Field-Tested"},{name:'Поношенное', id:17, type:"Well-Worn"},{name:'Закалённое в боях', id:18, type:"Battle-Scarred"},{name:'Не покрашено', id:19, type:"Not Painted"}] },
@@ -34,6 +35,8 @@ export default {
                 floatOption: { name: 'Float', value: 5, },
                 otherOption: { name: 'Другое', value: 6, checkboxes: [ {name:'Стикеры', id:29, type:"Sticker"},{name:'StatTrak™', id:30, type:"StatTrak™"},{name:'Сувенирные', id:31, type:"Souvenir"}] },
             },
+
+          // ты продублировал этот код из skins-market фичи, надо перенести в одно место - стор
             selectedCheckboxGroup: [],
             selectedPrice: {
                 gte: "",
@@ -47,6 +50,7 @@ export default {
         }
     },
     methods: {
+      // эта логика должна быть в store наряду с данными, иначе приходится лишнего дублировать в разных компонентах
         optionsSelect(option) {
             if (this.selectedCheckboxGroup.includes(option)) {
                 this.selectedCheckboxGroup.splice(this.selectedCheckboxGroup.indexOf(option),1)
@@ -56,7 +60,9 @@ export default {
             }
             this.$emit('optionsSelect',this.selectedCheckboxGroup)
         },
+
         priceSliderValue(option) {
+          // можно проще через this.selectedPrice = option
             this.selectedPrice.gte = option.gte
             this.selectedPrice.lte = option.lte
             this.$emit('priceSliderValue',this.selectedPrice)
@@ -78,7 +84,7 @@ export default {
             this.$emit('optionsSelect',this.selectedCheckboxGroup)
             setTimeout(() => {this.resetAllFilter = false}, 1000);
         }
-        
+
     }
 
 }
@@ -104,7 +110,7 @@ export default {
     opacity: .5;
     transition: 0.6s linear;
     box-sizing: border-box;
-    background-color: transparent;  
+    background-color: transparent;
     &:hover {
         opacity: 1;
     }

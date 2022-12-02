@@ -1,4 +1,7 @@
 <template>
+<!--  для верхнего ряда на главной тултип с именем товара скрывается (из-за скролла),-->
+<!--  я бы вообще сразу название товара показывал,-->
+<!--  это удобнее по UX, чем это по хаверу делать-->
     <div class="inventory-item" :class="{ 'inventory-item-on-sale': onSale }" @mouseenter="show = true"
         @mouseout="show = false" @click="addInSell(item_data)">
         <img :src="require('../../assets/images/skins/' + item_data.image)" alt="item" class="inventory-item__img">

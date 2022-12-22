@@ -145,7 +145,7 @@
             "id": "3291f674-e7d9-4fcf-9a33-c2f11ec2d156",
             "name": "AWP | Wildfire",
             "float": 0.1485,
-            "price": "7952.84",
+            "price": "4629.84",
             "wear": "MW",
             "link": "#",
             "image": "14.png",
@@ -255,7 +255,7 @@
             "id": "dec4ab54-248f-4996-8251-1adc9efdb4df",
             "name": "P90 | Nostalgia",
             "float": 0.3952,
-            "price": "414.07",
+            "price": "324.07",
             "wear": "WW",
             "link": "#",
             "image": "144486_b.png",
@@ -270,7 +270,7 @@
             "id": "77c8ce0c-6e48-4a64-bc78-23f0d22d677e",
             "name": "Tec-9 | Decimator",
             "float": 0.6035,
-            "price": "414.07",
+            "price": "523.07",
             "wear": "BS",
             "link": "#",
             "image": "144829_b.png",
@@ -332,7 +332,7 @@
             "id": "02b6ed7a-01e8-4aa0-b4ca-46e61de2b0d5",
             "name": "StatTrak™ XM1014 | Teclu Burner",
             "float": 0.4917,
-            "price": "123.98",
+            "price": "113.98",
             "wear": "BS",
             "link": "#",
             "image": "13859_b.png",
@@ -348,7 +348,7 @@
             "id": "32b0b3d5-351e-4e1f-a005-2e902d9578ec",
             "name": "StatTrak™ Desert Eagle | Directive",
             "float": 0.4382,
-            "price": "132.40",
+            "price": "152.40",
             "wear": "WW",
             "link": "#",
             "image": "15400_b.png",
@@ -395,7 +395,7 @@
             "id": "35939cf3-319a-448c-b79c-53cc9e068914",
             "name": "StatTrak™ P250 | Supernova",
             "float": 0.3223,
-            "price": "121.57",
+            "price": "155.57",
             "wear": "FT",
             "link": "#",
             "image": "11039_b.png",
@@ -411,7 +411,7 @@
             "id": "71f033eb-eabe-4252-9b18-058581682f50",
             "name": "MAG-7 | Praetorian",
             "float": 0.1988,
-            "price": "121.57",
+            "price": "132.57",
             "wear": "FT",
             "link": "#",
             "image": "14023_b.png",
@@ -426,7 +426,7 @@
             "id": "68513c62-d3ef-4df2-9340-d4d22dd72fb6",
             "name": "StatTrak™ FAMAS | ZX Spectron",
             "float": 0.6745,
-            "price": "121.57",
+            "price": "115.57",
             "wear": "BS",
             "link": "#",
             "image": "150698_b.png",
@@ -438,6 +438,227 @@
                 "Battle-Scarred"
             ]
         }
-        
-    ]
+
+    ],
+    "options": {
+        "priceOption":{
+            "name":"Цена",
+            "value":1
+        },
+        "typeOption":{
+            "name":"Тип",
+            "value":2,
+            "checkboxes":[
+                {
+                    "name":"Нож",
+                    "id":1,
+                    "type":"Knife"
+                },
+                {
+                    "name":"Пулемет",
+                    "id":2,
+                    "type":"Machinegun"
+                },
+                {
+                    "name":"Пистолет",
+                    "id":3,
+                    "type":"Pistol"
+                },
+                {
+                    "name":"Винтовка",
+                    "id":4,
+                    "type":"Rifle"
+                },
+                {
+                    "name":"Дробовик",
+                    "id":5,
+                    "type":"Shotgun"
+                },
+                {
+                    "name":"Снайперская винтовка",
+                    "id":6,
+                    "type":"Sniper Rifle"
+                },
+                {
+                    "name":"Подарок",
+                    "id":7,
+                    "type":"Gift"
+                },
+                {
+                    "name":"Именной ярлык",
+                    "id":8,
+                    "type":"Tag"
+                },
+                {
+                    "name":"Патч",
+                    "id":9,
+                    "type":"Patch"
+                },
+                {
+                    "name":"Наклейка",
+                    "id":10,
+                    "type":"Sticker"
+                },
+                {
+                    "name":"Перчатки",
+                    "id":11,
+                    "type":"Gloves"
+                },
+                {
+                    "name":"Контейнер",
+                    "id":12,
+                    "type":"Container"
+                },
+                {
+                    "name":"Ключ",
+                    "id":13,
+                    "type":"Key"
+                }
+            ]
+        },
+        "wearOption":{
+            "name":"Износ",
+            "value":3,
+            "checkboxes":[
+                {
+                    "name":"Прямо с завода",
+                    "id":14,
+                    "type":"Factory New"
+                },
+                {
+                    "name":"Немного поношенное",
+                    "id":15,
+                    "type":"Minimal Wear"
+                },
+                {
+                    "name":"После полевых испытаний",
+                    "id":16,
+                    "type":"Field-Tested"
+                },
+                {
+                    "name":"Поношенное",
+                    "id":17,
+                    "type":"Well-Worn"
+                },
+                {
+                    "name":"Закалённое в боях",
+                    "id":18,
+                    "type":"Battle-Scarred"
+                },
+                {
+                    "name":"Не покрашено",
+                    "id":19,
+                    "type":"Not Painted"
+                }
+            ]
+        },
+        "holdOption":{
+            "name":"Холд",
+            "value":4,
+            "checkboxes":[
+                {
+                    "name":"Без холда",
+                    "id":20,
+                    "type":"Without hold"
+                },
+                {
+                    "name":"1 день",
+                    "id":21,
+                    "type":"1 day"
+                },
+                {
+                    "name":"2 дня",
+                    "id":22,
+                    "type":"2 days"
+                },
+                {
+                    "name":"3 дня",
+                    "id":23,
+                    "type":"3 days"
+                },
+                {
+                    "name":"4 дня",
+                    "id":24,
+                    "type":"4 days"
+                },
+                {
+                    "name":"5 дней",
+                    "id":25,
+                    "type":"5 days"
+                },
+                {
+                    "name":"6 дней",
+                    "id":26,
+                    "type":"6 days"
+                },
+                {
+                    "name":"7 дней",
+                    "id":27,
+                    "type":"7 days"
+                },
+                {
+                    "name":"8 дней",
+                    "id":28,
+                    "type":"8 days"
+                }
+            ]
+        },
+        "floatOption":{
+            "name":"Float",
+            "value":5
+        },
+        "otherOption":{
+            "name":"Другое",
+            "value":6,
+            "checkboxes":[
+                {
+                    "name":"Стикеры",
+                    "id":29,
+                    "type":"Sticker"
+                },
+                {
+                    "name":"StatTrak™",
+                    "id":30,
+                    "type":"StatTrak™"
+                },
+                {
+                    "name":"Сувенирные",
+                    "id":31,
+                    "type":"Souvenir"
+                }
+            ]
+        }
+    },
+    "selectOptions": {
+        "popularity":{
+            "name":"Популярность",
+            "icons":"",
+            "value":1,
+            "type": "popularity"
+        },
+        "priceDesc": {
+            "name":"Цена",
+            "icons":"fa-solid fa-arrow-up-short-wide",
+            "value":2,
+            "type": "priceDesc"
+        },
+        "priceAsc": {
+            "name":"Цена",
+            "icons":"fa-solid fa-arrow-down-short-wide",
+            "value":3,
+            "type": "priceAsc"
+        },
+        "floatDesc": {
+            "name":"Float",
+            "icons":"fa-solid fa-arrow-up-short-wide",
+            "value":6,
+            "type": "floatDesc"
+        },
+        "floatAsc": {
+            "name":"Float",
+            "icons":"fa-solid fa-arrow-down-short-wide",
+            "value":7,
+            "type": "floatAsc"
+        }
+    }
 }
